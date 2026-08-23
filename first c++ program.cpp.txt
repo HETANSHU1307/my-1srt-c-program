@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+int main()
+{
+    float g,d,n;
+    printf("========================================================\n");
+    printf("Welcome to supermarket program!!!!!\n");
+    printf("========================================================\n");
+    printf("HERE IF YOUR GROSS_SALE IS MORE THEN $10000,THEN YOU GET 10 PERCENT DISCOUNT!!!\n");
+    printf("HERE IF YOUR GROSS_SALE IS MORE THEN $20000,THEN YOU GET 20 PERCENT DISCOUNT!!!\n");
+    printf("AND DEFAULT DISCOUNT ON TOTAL AMOUNT IS 5 PERCENT\n");
+    printf("=======================================================\n");   
+    printf("ENTER gross_sales = $");
+    scanf("%f",&g);
+    if (g>20000)
+        d = g*0.15;
+    else if (g>10000)
+        d = g*0.10;
+    else
+        d = g*0.05;
+    n = g -d;
+    printf("DISCOUNT =$ %2f\n",d);
+    printf("NET SALES  =$ %2f\n",n);
+    printf("=========================================================\n");
+    return 0;        
+}
